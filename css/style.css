@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+.ancho{
+    max-width: 1200px;
+    margin: auto;
+}
+header{
+    background-color: #e9e2e2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+header figure{
+    width: 15%;
+    margin: 0;
+    padding: 0;
+}
+header figure img{
+    width: 100%;
+}
+#iconmenu a{
+    color: white;
+    font-size: 1rem;
+}
+#iconmenu{
+    background-color: #16162e;
+}
+.barra{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+#boton{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.barra nav a{
+    text-decoration: none;
+    border: 2px #16162e solid;
+    padding: 10px;
+    color: black;
+}
+.cuerpo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.cuerpo figure{
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    border: 1px #ccc solid;
+}
+.cuerpo figure img{
+    width: 100%;
+}
+.texto h2{
+    color: goldenrod;
+}
+.texto h4{
+    color: #16162e;
+}
+.cuerpo button{
+    background-color: #16162e;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #16162e;
+    padding: 20px;
+}
+footer p{
+    color: white;
+}
+
+@media screen and (max-width:768px){
+    header{
+        flex-direction: row;
+    }
+    .barra{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+    .boton{
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .barra nav a{
+        border: none;
+        border-bottom: 1px #16162e solid;
+    }
+    .cuerpo{
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 10px;
+    }
+    .cuerpo figure{
+        width: 95%;
+    }
+    .texto h2{
+        text-align: center;
+    }
+    .texto h4{
+        text-align: center;
+    }
+    .texto p{
+        text-align: start;
+    }
+}
+@media screen and (max-width:480px){
+    .barra{
+        display: none;
+    }
+    .cuerpo{
+        padding-top: 10px;
+    }
+    .cuerpo figure{
+        width: 95%;
+    }
+}

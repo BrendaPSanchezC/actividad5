@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src='https://kit.fontawesome.com/66c3e37d5e.js' crossorigin='anonymous'></script>
+    <title>Document</title>
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+</head>
+<body>
+    <header class="ancho">
+        <figure>
+            <img src="imagenes/pullrequest-logo.svg" alt="texto de la imagen">
+        <figure>
+        <div id="icon"><a href="#" id="icon"><i class='fa-solid fa-bars'></i></a></div>
+    </header>
+    <section class="barra ancho" id="boton">
+        <nav class="boton">
+            <a href="#">Inicio</a>
+            <a href="#">Empresa</a>
+            <a href="#">Sevicios</a>
+            <a href="#">Clientes</a>
+            <a href="#">Ubicacion</a>
+            <a href="#">Comunicacion</a>
+        </nav>
+    </section>
+    <section class="cuerpo ancho">
+        <div class="texto">
+            <h2>Creacion de paginas web</h2>
+            <br>
+            <h4>Curso basico de HTML5 y CSS3</h4>
+            <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo atque laudantium possimus repellat est deleniti consectetur expedita laboriosam vel fugiat distinctio dolorem molestiae, odit repudiandae natus, saepe aut ad voluptas?</p>
+            <br>
+            <button>Ver</button>
+        </div>
+        <figure>
+            <img src="imagenes/foto_pullrequest.svg" alt="texto de la imagen">
+        <figure>
+    </section>
+    <br>
+    <footer>
+        <p>@itmerida</p>
+    </footer>
+    <script>
+        $("#icon").click(function () {
+            $("#boton").slideToggle();
+        });
+    </script>
+</body>
+</html>
